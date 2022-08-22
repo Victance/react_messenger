@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+
+    "userData": {
+      "id": "NlwLU8",
+      "avatar": "https://img.buzzfeed.com/buzzfeed-static/static/2022-05/11/14/asset/82ea240a9e12/sub-buzz-2936-1652280422-21.jpg?downsize=900:*&output-format=auto&output-quality=auto",
+      "name": "Jessica"
+    },
+
+    "isUnread": false,
+
+    "dialog": [
+      {
+        "isAuthor": false,
+        "text": "It is like nobody knows it even exist...",
+        "date": "4/22/17 4:00 AM"
+      },
+      {
+        "isAuthor": true,
+        "text": "Do you mean right Ctrl?)",
+        "date": "4/22/17 4:05 AM"
+      },
+      {
+        "isAuthor": false,
+        "text": "Ahah, poor thing xD",
+        "date": "4/22/17 4:10 AM"
+      }
+    ]
+  },
+
+  {
+    "id": "2",
+
+    "userData": {
+      "id": "EKzZuR",
+      "avatar": "https://play-lh.googleusercontent.com/-u-oG-Ni_pco9h7zc3CQl-lFkKJjztO3RGZMjnbaDiznnbXoMQZYUjITHN0BVxYHBg=w240-h480-rw",
+      "name": "Jane"
+    },
+
+    "isUnread": false,
+
+    "dialog": [
+      {
+        "isAuthor": true,
+        "text": "It is seems I'm getting old",
+        "date": "4/22/17 4:00 AM"
+      },
+      {
+        "isAuthor": false,
+        "text": "Relax, age is just a number",
+        "date": "4/22/17 4:05 AM"
+      },
+      {
+        "isAuthor": true,
+        "text": "Actually, it is a string",
+        "date": "4/22/17 4:05 AM"
+      }
+    ]
+  },
+
+  {
+    "id": "3",
+
+    "userData": {
+      "id": "gStI4Y",
+      "avatar": "https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
+      "name": "Juno"
+    },
+
+    "isUnread": false,
+
+    "dialog": [
+      {
+        "isAuthor": false,
+        "text": "Батько наш Бандера...",
+        "date": "4/22/17 4:00 AM"
+      },
+      {
+        "isAuthor": true,
+        "text": "Україна мати, ми за Україну підем воювати!",
+        "date": "4/22/17 4:05 AM"
+      }
+    ]
+  },
+
+  {
+    "id": "4",
+
+    "userData": {
+      "id": "btrdyZ",
+      "avatar": "https://images.unian.net/photos/2022_08/thumb_files/1200_0_1660141146-4485.jpg",
+      "name": "Жіночка"
+    },
+
+    "isUnread": false,
+
+    "dialog": [
+      {
+        "isAuthor": true,
+        "text": "Шо там, як в Криму справи?)",
+        "date": "4/22/17 4:00 AM"
+      },
+      {
+        "isAuthor": false,
+        "text": "Вообще не хочу уезжать из Крыма, из Алушты! Как здесь классно! Вообще… Я привыкла здесь, как в своем доме жили. Настолько все душевно! По-домашнему",
+        "date": "4/22/17 4:05 AM"
+      },
+      {
+        "isAuthor": true,
+        "text": "Це ще Притула супутника не запустив)",
+        "date": "4/22/17 4:05 AM"
+      }
+    ]
+  },
+
+  {
+    "id": "5",
+
+    "userData": {
+      "id": "EtABzK",
+      "avatar": "https://i1.sndcdn.com/artworks-Im4SB1sZq15yr4Uo-DFb75A-t500x500.jpg",
+      "name": "Батько наш"
+    },
+
+    "isUnread": false,
+
+    "dialog": [
+      {
+        "isAuthor": true,
+        "text": "Ви знали що 'боєголовка' це скорочення від 'бойова головка'?))",
+        "date": "4/22/17 4:00 AM"
+      },
+      {
+        "isAuthor": false,
+        "text": "Пхахахахаха, щоб русні по лобі настукати xD",
+        "date": "4/22/17 4:05 AM"
+      },
+      {
+        "isAuthor": true,
+        "text": "🤣🤣",
+        "date": "4/22/17 4:05 AM"
+      }
+    ]
+  }
+]

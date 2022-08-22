@@ -1,0 +1,19 @@
+.SpecificChat {
+  display: flex;
+  padding: 40px 20px 20px 20px;
+  border-bottom: 1px solid #d1cccc;
+
+  &__container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 20px;
+  }
+  
+  &__sub-container {
+    display: flex;  
+    justify-content: space-between;
+  }
+}

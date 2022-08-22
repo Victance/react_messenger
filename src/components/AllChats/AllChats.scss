@@ -1,0 +1,12 @@
+
+.AllChats {
+  height: 75vh;
+  overflow-y: auto;
+
+  &__title {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #6cacd1;
+  }
+}
