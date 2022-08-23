@@ -1,12 +1,11 @@
-import { IChat } from '../../types/IChat';
+import { useLocalStorage } from '../../customHooks/useLocalStorage';
 import { SpecificChat } from '../SpecificChat/SpecificChat';
 import './AllChats.scss';
+import chatsFromServer from '../../api/chats.json'
 
-type Props = {
-  chats: IChat[];
-};
+export const AllChats: React.FC = () => {
+  const [chats] = useLocalStorage('chats', chatsFromServer)
 
-export const AllChats: React.FC<Props> = ({ chats }) => {
   return (
     <div className="AllChats">
       <div className="AllChats__title">Chats</div>

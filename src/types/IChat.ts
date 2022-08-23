@@ -5,5 +5,5 @@ export interface IChat {
   id: string;
   userData: IUser;
   isUnread: boolean;
-  dialog: Array<IMessage>;
+  dialog: IMessage[];
 };

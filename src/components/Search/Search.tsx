@@ -1,10 +1,21 @@
 import './Search.scss';
 import '../../styles/photo.scss';
+import chatsFromServer from '../../api/chats.json'
+import { useLocalStorage } from '../../customHooks/useLocalStorage';
+import photo from './Photo.jpg'
 
 export const Search = () => {
+  const [chats] = useLocalStorage('chats', chatsFromServer)
+
   return (
     <div className="Search">
-      <div className="photo Search__photo"><span className="photo__tick"></span></div>
+      <div className="photo">
+        <img
+          className='photo__img'
+          alt='User'
+          src={photo}
+        />
+      </div>
 
       <form 
         action="/" 
