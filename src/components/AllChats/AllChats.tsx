@@ -1,11 +1,14 @@
-import { useLocalStorage } from '../../customHooks/useLocalStorage';
+import { IChat } from '../../types/IChat';
 import { SpecificChat } from '../SpecificChat/SpecificChat';
 import './AllChats.scss';
-import chatsFromServer from '../../api/chats.json'
 
-export const AllChats: React.FC = () => {
-  const [chats] = useLocalStorage('chats', chatsFromServer)
+type Props = {
+  chats: IChat[];
+  setSelectedChat: (value: IChat) => void;
+  selectedChat: IChat | null;
+}
 
+export const AllChats: React.FC<Props> = ({ chats, setSelectedChat, selectedChat}) => {
   return (
     <div className="AllChats">
       <div className="AllChats__title">Chats</div>
@@ -13,9 +16,9 @@ export const AllChats: React.FC = () => {
       {chats.map(chat => (
         <SpecificChat 
           key={chat.id}
-          name={chat.userData.name}
-          photo={chat.userData.avatar}
-          dialog={chat.dialog}
+          chat={chat}
+          setSelectedChat={setSelectedChat}
+          selectedChat={selectedChat}
         />
       ))}
     </div>

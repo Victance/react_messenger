@@ -3,13 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HashRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { Chat } from './components/Chat/Chat';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path=":chatId" element={<Chat />} />
+        </Route>
+        <Route path="/home" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<h1>Page not found</h1>} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

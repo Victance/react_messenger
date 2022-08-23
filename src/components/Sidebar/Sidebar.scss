@@ -5,3 +5,49 @@
   height: 100%;
   border: 1px solid #d1cccc;
 }
+
+.Search {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  height: 25vh;
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+
+  &__photo {
+    margin-bottom: 15px;
+  }
+
+  &__form {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #d1cccc;
+    border-radius: 100px;
+    outline: none;
+    background-color: #fff;
+  }
+
+  &__input {
+    font-size: 18px;
+    height: 30px;
+    width: 90%;
+    border: none;
+    background-color: inherit;
+    outline: none;
+  }
+
+  &__button {
+    border: none;
+    background-color: inherit;
+    
+    &::before {
+      content: '';
+      background-image: url(../../img/search.png);
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+    }
+  }
+}

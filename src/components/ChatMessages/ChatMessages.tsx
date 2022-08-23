@@ -1,9 +1,15 @@
+import { IChat } from '../../types/IChat';
 import './ChatMessages.scss';
 
-export const ChatMessages = () => {
+type Props = {
+  selectedChat: IChat | null;
+};
+
+export const ChatMessages: React.FC<Props> = ({ selectedChat }) => {
   return (
     <>
       <div className="ChatMessages">
+      
         <div className="ChatMessages__container">
           <div className="photo" />
           
