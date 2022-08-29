@@ -48,9 +48,9 @@ const App: React.FC = () => {
 
       {chatId && windowWidth < 1024 && (
         <Outlet context={{ chats, save, setTest, test }} />
-       )}
+      )}
 
-       {windowWidth > 1024 && chatId && (
+      {windowWidth > 1024 && chatId && (
           <>
             <Sidebar 
               chats={chats}
@@ -58,9 +58,9 @@ const App: React.FC = () => {
 
             <Outlet context={{ chats, save, setTest, test }} />
           </>
-        )}
+      )}
 
-        {windowWidth > 1024 && !chatId && (
+      {windowWidth > 1024 && !chatId && (
           <>
             <Sidebar 
               chats={chats}
@@ -68,7 +68,7 @@ const App: React.FC = () => {
 
             <p className='Warning'>Please select chat</p>
           </>
-        )}  
+      )}  
     </div>
   );
 }

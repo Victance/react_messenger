@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import { v4 as uuidv4 } from 'uuid';
 import { useRef, useState } from 'react';
 import { getResponse } from '../../api/response';
 import { IChat } from '../../types/IChat';
@@ -9,13 +10,12 @@ type Props = {
   save: (value: IChat[]) => void;
   chats: IChat[];
   setTest: (value:number) => void
-  selectedChat: IChat;
   test: number;
   fieldRef: React.RefObject<HTMLDivElement>;
   selectedChatId: string;
 };
 
-export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat, selectedChatId, test, fieldRef }) => {
+export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChatId, test, fieldRef }) => {
   const [newText, setNewText] = useState('');
   const formRef = useRef<HTMLButtonElement>(null);
 
@@ -24,10 +24,6 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat,
       fieldRef.current.scrollIntoView({ behavior: 'smooth' })
     }
   }
-  
-  const findMaxId = () => {
-    return Math.max(...selectedChat.messages.map(message => +message.id));
-  };
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -37,17 +33,16 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat,
     }
 
     const newMessage: IMessage = {
-      id: (findMaxId() + 1).toString(),
+      id: uuidv4(),
       isAuthor: true,
       text: newText.trim(),
       date: dayjs().format('D/M/YY h:mm A'),
     } 
 
-    let firstChatToSave = [...chats]
-    firstChatToSave.find()
-    selectedChat.messages.push(newMessage);
-    save(chats);
-    setTest(test + 1)
+    let firstChatsToSave = [...chats]
+    firstChatsToSave.find(chat => chat.id === selectedChatId)?.messages.push(newMessage);
+    save(firstChatsToSave);
+
     setTimeout(scroll, 1);
 
     setNewText('');
@@ -55,18 +50,18 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat,
     const newResponseText = (await getResponse()).value;
 
     const newResponse: IMessage = {
-      id: (findMaxId() + 1).toString(),
+      id: uuidv4(),
       isAuthor: false,
       text: newResponseText,
       date: dayjs().format('D/M/YY h:mm A'),
     } 
     
     setTimeout(() => {
-      selectedChat.messages.push(newResponse);
-      save(chats);
-      setTest(test + 2)
+      let secondChatsToSave = [...firstChatsToSave]
+      secondChatsToSave.find(chat => chat.id === selectedChatId)?.messages.push(newResponse);
+      save(secondChatsToSave);
       setTimeout(scroll, 1);
-    }, 10000)
+    }, 1000)
   }
 
   const handleKeyPressed = (event: React.KeyboardEvent) => {

@@ -52,7 +52,6 @@ export const Chat: React.FC = () => {
             save={save} 
             chats={chats} 
             setTest={setTest} 
-            selectedChat={selectedChat}
             selectedChatId={selectedChat.id} 
             test={test}
             fieldRef={fieldRef}
