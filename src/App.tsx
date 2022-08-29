@@ -6,7 +6,7 @@ import { useLayoutEffect, useState } from 'react';
 import { IChat } from './types/IChat';
 import { Outlet, useOutletContext, useParams } from 'react-router-dom';
 
-type ContextType = { chats: IChat[], save: (value: IChat[]) => void, setTest: (value:number) => void, test: number };
+type ContextType = { chats: IChat[], save: (value: IChat[]) => void };
 
 export function useChats() {
   return useOutletContext<ContextType>();
@@ -32,7 +32,6 @@ function useWindowWidth() {
 
 const App: React.FC = () => {
   const [chats, save] = useLocalStorage('chats', chatsFromServer)
-  const [test, setTest] = useState(1)
   const { chatId } = useParams();
   const [windowWidth] = useWindowWidth();
 
@@ -47,7 +46,7 @@ const App: React.FC = () => {
       )}
 
       {chatId && windowWidth < 1024 && (
-        <Outlet context={{ chats, save, setTest, test }} />
+        <Outlet context={{ chats, save }} />
       )}
 
       {windowWidth > 1024 && chatId && (
@@ -56,7 +55,7 @@ const App: React.FC = () => {
               chats={chats}
             />
 
-            <Outlet context={{ chats, save, setTest, test }} />
+            <Outlet context={{ chats, save }} />
           </>
       )}
 

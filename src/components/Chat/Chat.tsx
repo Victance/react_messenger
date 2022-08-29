@@ -8,7 +8,7 @@ import { useRef } from 'react';
 import { ScrollButton } from '../ScrollButton/ScrollButton';
 
 export const Chat: React.FC = () => {
-  const { chats, save, setTest, test } = useChats();
+  const { chats, save } = useChats();
   const { chatId } = useParams();
   const fieldRef = useRef<HTMLDivElement>(null);
   const selectedChat = chats.find(chat => chat.id === chatId) || null;
@@ -51,9 +51,7 @@ export const Chat: React.FC = () => {
           <ChatInput 
             save={save} 
             chats={chats} 
-            setTest={setTest} 
             selectedChatId={selectedChat.id} 
-            test={test}
             fieldRef={fieldRef}
           />
         </>

@@ -9,13 +9,11 @@ import './ChatInput.scss';
 type Props = {
   save: (value: IChat[]) => void;
   chats: IChat[];
-  setTest: (value:number) => void
-  test: number;
   fieldRef: React.RefObject<HTMLDivElement>;
   selectedChatId: string;
 };
 
-export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChatId, test, fieldRef }) => {
+export const ChatInput: React.FC<Props> = ({ save, chats, selectedChatId, fieldRef }) => {
   const [newText, setNewText] = useState('');
   const formRef = useRef<HTMLButtonElement>(null);
 
@@ -24,6 +22,9 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChatI
       fieldRef.current.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
+  let firstChatsToSave: IChat[];
+  let secondChatsToSave: IChat[];
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -39,7 +40,7 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChatI
       date: dayjs().format('D/M/YY h:mm A'),
     } 
 
-    let firstChatsToSave = [...chats]
+    firstChatsToSave = [...chats]
     firstChatsToSave.find(chat => chat.id === selectedChatId)?.messages.push(newMessage);
     save(firstChatsToSave);
 
@@ -57,7 +58,7 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChatI
     } 
     
     setTimeout(() => {
-      let secondChatsToSave = [...firstChatsToSave]
+      secondChatsToSave = [...firstChatsToSave]
       secondChatsToSave.find(chat => chat.id === selectedChatId)?.messages.push(newResponse);
       save(secondChatsToSave);
       setTimeout(scroll, 1);
