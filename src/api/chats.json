@@ -50,15 +50,13 @@
         "isAuthor": true,
         "text": "It seems I'm getting old",
         "date": "4/22/17 5:00 AM"
-      }
-      ,
+      },
       {
         "id": "2",
         "isAuthor": false,
         "text": "Relax, age is just a number",
         "date": "4/22/17 5:05 AM"
-      }
-      ,
+      },
       {
         "id": "3",
         "isAuthor": true,
@@ -85,8 +83,7 @@
         "isAuthor": false,
         "text": "Long lorem to test scroll and message preview",
         "date": "4/22/17 6:00 AM"
-      }
-      ,
+      },
       {
         "id": "2",
         "isAuthor": true,
@@ -112,8 +109,7 @@
         "isAuthor": true,
         "text": "Шо там, як в Криму справи?",
         "date": "4/22/17 7:00 AM"
-      }
-      ,
+      },
       {
         "id": "2",
         "isAuthor": false,
@@ -126,7 +122,6 @@
         "isAuthor": true,
         "text": "Це ще Притула супутника не запустив)",
         "date": "4/22/17 7:10 AM"
-
       }
     ]
   },
@@ -154,8 +149,7 @@
         "isAuthor": false,
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "date": "4/22/17 8:05 AM"
-      }
-      ,
+      },
       {
         "id": "3",
         "isAuthor": true,

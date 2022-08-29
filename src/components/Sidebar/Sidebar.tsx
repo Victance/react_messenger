@@ -6,6 +6,7 @@ import '../../styles/photo.scss';
 import { IChat } from '../../types/IChat';
 import { useState } from 'react';
 import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 
 type Props = {
   chats: IChat[];
@@ -16,12 +17,12 @@ export const Sidebar: React.FC<Props> = ({ chats }) => {
   const queryLower = query.toLowerCase();
   let displayedChats: IChat[];
   
-  var customParseFormat = require('dayjs/plugin/customParseFormat')
   dayjs.extend(customParseFormat)
 
   const chatsSortedByDate = chats.sort((chat1, chat2) => +dayjs(chat2.messages[chat2.messages.length - 1].date, 'D/M/YY h:mm A')
    - +dayjs(chat1.messages[chat1.messages.length - 1].date, 'D/M/YY h:mm A'));
   
+   
   const chatsFilteredByName = chats.filter(chat => chat.userData.name.toLowerCase().includes(queryLower));
   const chatsFilteredByText = chats.filter(chat => chat.messages.some(message => message.text.toLowerCase().includes(queryLower)));
 
