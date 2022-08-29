@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react_messenger/static/css/main.d2b63060.css",
+    "main.js": "/react_messenger/static/js/main.4b2f4ffc.js",
+    "static/js/787.4418018c.chunk.js": "/react_messenger/static/js/787.4418018c.chunk.js",
+    "static/media/Photo.jpg": "/react_messenger/static/media/Photo.44e495ff41e266c6c752.jpg",
+    "static/media/checked.png": "/react_messenger/static/media/checked.dc6fda5f5f69d3d218b1.png",
+    "index.html": "/react_messenger/index.html",
+    "static/media/icon-up-hover.svg": "/react_messenger/static/media/icon-up-hover.1524f698470649d74f9b.svg",
+    "static/media/icon-up.svg": "/react_messenger/static/media/icon-up.a554b73c293977e6a706.svg",
+    "main.d2b63060.css.map": "/react_messenger/static/css/main.d2b63060.css.map",
+    "main.4b2f4ffc.js.map": "/react_messenger/static/js/main.4b2f4ffc.js.map",
+    "787.4418018c.chunk.js.map": "/react_messenger/static/js/787.4418018c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2b63060.css",
+    "static/js/main.4b2f4ffc.js"
+  ]
+}
