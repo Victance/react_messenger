@@ -12,9 +12,10 @@ type Props = {
   selectedChat: IChat;
   test: number;
   fieldRef: React.RefObject<HTMLDivElement>;
+  selectedChatId: string;
 };
 
-export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat, test, fieldRef }) => {
+export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat, selectedChatId, test, fieldRef }) => {
   const [newText, setNewText] = useState('');
   const formRef = useRef<HTMLButtonElement>(null);
 
@@ -42,6 +43,8 @@ export const ChatInput: React.FC<Props> = ({ save, chats, setTest, selectedChat,
       date: dayjs().format('D/M/YY h:mm A'),
     } 
 
+    let firstChatToSave = [...chats]
+    firstChatToSave.find()
     selectedChat.messages.push(newMessage);
     save(chats);
     setTest(test + 1)
