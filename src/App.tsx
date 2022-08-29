@@ -2,10 +2,9 @@ import './App.scss';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { useLocalStorage } from './customHooks/useLocalStorage';
 import chatsFromServer from './api/chats.json'
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { IChat } from './types/IChat';
 import { Outlet, useOutletContext, useParams } from 'react-router-dom';
-import { text } from 'stream/consumers';
 
 type ContextType = { chats: IChat[], save: (value: IChat[]) => void, setTest: (value:number) => void, test: number };
 
@@ -37,16 +36,12 @@ const App: React.FC = () => {
   const { chatId } = useParams();
   const [windowWidth] = useWindowWidth();
 
-  const [selectedChat, setSelectedChat] = useState<IChat | null>(chats.find(chat => chat.isSelected) || null)
-
   return (
     <div className="App">
       {windowWidth < 1024 && !chatId && (
         <>
           <Sidebar 
             chats={chats}
-            setSelectedChat={setSelectedChat}
-            selectedChat={selectedChat}
           />         
         </>
       )}
@@ -59,8 +54,6 @@ const App: React.FC = () => {
           <>
             <Sidebar 
               chats={chats}
-              setSelectedChat={setSelectedChat}
-              selectedChat={selectedChat}
             />
 
             <Outlet context={{ chats, save, setTest, test }} />
@@ -71,8 +64,6 @@ const App: React.FC = () => {
           <>
             <Sidebar 
               chats={chats}
-              setSelectedChat={setSelectedChat}
-              selectedChat={selectedChat}
             />
 
             <p className='Warning'>Please select chat</p>

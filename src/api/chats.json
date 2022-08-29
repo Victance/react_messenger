@@ -8,32 +8,27 @@
       "name": "Пан Заглушка 1"
     },
 
-    "isUnread": false,
-    "isSelected": false,
 
     "messages": [
       { 
         "id": "1",
         "isAuthor": false,
         "text": "It is like nobody knows it even exist...",
-        "date": "4/22/17 4:00 AM",
-        "isUnread": false
+        "date": "4/22/17 4:00 AM"
       }
       ,
       {
         "id": "2",
         "isAuthor": true,
         "text": "Do you mean right Ctrl?",
-        "date": "4/22/17 4:05 AM",
-        "isUnread": false
+        "date": "4/22/17 4:05 AM"
       }
       ,
       {
         "id": "3",
         "isAuthor": false,
         "text": "Yeah, exactly)",
-        "date": "4/22/17 4:10 AM",
-        "isUnread": false
+        "date": "4/22/17 4:10 AM"
 
       }
     ]
@@ -48,32 +43,27 @@
       "name": "Пан Заглушка 2"
     },
 
-    "isUnread": false,
-    "isSelected": false,
 
     "messages": [
       {
         "id": "1",
         "isAuthor": true,
         "text": "It seems I'm getting old",
-        "date": "4/22/17 5:00 AM",
-        "isUnread": false
+        "date": "4/22/17 5:00 AM"
       }
       ,
       {
         "id": "2",
         "isAuthor": false,
         "text": "Relax, age is just a number",
-        "date": "4/22/17 5:05 AM",
-        "isUnread": false
+        "date": "4/22/17 5:05 AM"
       }
       ,
       {
         "id": "3",
         "isAuthor": true,
         "text": "Actually, it is a string",
-        "date": "4/22/17 5:10 AM",
-        "isUnread": false
+        "date": "4/22/17 5:10 AM"
 
       }
     ]
@@ -88,25 +78,20 @@
       "name": "Пан Заглушка 3"
     },
 
-    "isUnread": false,
-    "isSelected": false,
 
     "messages": [
       {
         "id": "1",
         "isAuthor": false,
         "text": "Long lorem to test scroll and message preview",
-        "date": "4/22/17 6:00 AM",
-        "isUnread": false
+        "date": "4/22/17 6:00 AM"
       }
       ,
       {
         "id": "2",
         "isAuthor": true,
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "date": "4/22/17 6:05 AM",
-        "isUnread": false
-
+        "date": "4/22/17 6:05 AM"
       }
     ]
   },
@@ -120,32 +105,27 @@
       "name": "Жіночка з Криму"
     },
 
-    "isUnread": false,
-    "isSelected": false,
 
     "messages": [
       {
         "id": "1",
         "isAuthor": true,
         "text": "Шо там, як в Криму справи?",
-        "date": "4/22/17 7:00 AM",
-        "isUnread": false
+        "date": "4/22/17 7:00 AM"
       }
       ,
       {
         "id": "2",
         "isAuthor": false,
         "text": "Вообще не хочу уезжать из Крыма, из Алушты! Как здесь классно! Вообще… Я привыкла здесь, как в своем доме жили. Настолько все душевно! По-домашнему",
-        "date": "4/22/17 7:05 AM",
-        "isUnread": false
+        "date": "4/22/17 7:05 AM"
       }
       ,
       {
         "id": "3",
         "isAuthor": true,
         "text": "Це ще Притула супутника не запустив)",
-        "date": "4/22/17 7:10 AM",
-        "isUnread": false
+        "date": "4/22/17 7:10 AM"
 
       }
     ]
@@ -160,33 +140,27 @@
       "name": "Пан Заглушка 4"
     },
 
-    "isUnread": false,
-    "isSelected": false,
 
     "messages": [
       {
         "id": "1",
         "isAuthor": true,
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "date": "4/22/17 8:00 AM",
-        "isUnread": false
+        "date": "4/22/17 8:00 AM"
 
       },
       {
         "id": "2",
         "isAuthor": false,
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "date": "4/22/17 8:05 AM",
-        "isUnread": false
+        "date": "4/22/17 8:05 AM"
       }
       ,
       {
         "id": "3",
         "isAuthor": true,
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "date": "4/22/17 8:10 AM",
-        "isUnread": false
-
+        "date": "4/22/17 8:10 AM"
       }
     ]
   }

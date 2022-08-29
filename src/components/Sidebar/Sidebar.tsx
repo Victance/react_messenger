@@ -9,11 +9,9 @@ import dayjs from 'dayjs';
 
 type Props = {
   chats: IChat[];
-  setSelectedChat: (value: IChat) => void;
-  selectedChat: IChat | null;
 }
 
-export const Sidebar: React.FC<Props> = ({ chats, setSelectedChat, selectedChat }) => {
+export const Sidebar: React.FC<Props> = ({ chats }) => {
   const [query, setQuery] = useState('');
   const queryLower = query.toLowerCase();
   let displayedChats: IChat[];
