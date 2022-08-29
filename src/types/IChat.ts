@@ -6,5 +6,5 @@ export interface IChat {
   userData: IUser;
   isUnread: boolean;
   isSelected: boolean,
-  dialog: IMessage[];
+  messages: IMessage[];
 };

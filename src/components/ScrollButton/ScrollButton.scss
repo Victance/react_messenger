@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+}
+
+.ScrollButton {
+  position: fixed;
+  z-index: 1;
+  right: 20px;
+  bottom: 140px;
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background-color: inherit;
+  background-image: url(../../img/icon-up.svg);
+  background-position: center;
+  background-size: contain;
+
+  transition: background-image 0.3s;
+
+  &:hover {
+    background-image: url(../../img/icon-up-hover.svg);
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

@@ -1,18 +1,19 @@
 import { useState } from "react";
-import { IChat } from "../types/IChat";
 
-export function useLocalStorage (key: string, initialValue: IChat[]) {
-  const [value, setValue] = useState<IChat[]>((): IChat[] => {
-    try {
-      return JSON.parse(localStorage.getItem(key) || '') || initialValue
-    } catch {
-      return initialValue
+export function useLocalStorage <T>(key: string, initialValue: T) {
+  const [value, setValue] = useState<T>((): T => {
+    const AcceptableKey = localStorage.getItem(key);
+
+    if (AcceptableKey) {
+      return JSON.parse(AcceptableKey);
     }
+
+    return initialValue;
   }); 
 
-  const save = (value: IChat[]) => {
-    setValue(value);
-    localStorage.setItem(key, JSON.stringify(value));
+  const save = (newValue: T) => {
+    setValue(newValue);
+    localStorage.setItem(key, JSON.stringify(newValue));
   }
 
   return [value, save] as const;

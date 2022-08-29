@@ -4,28 +4,37 @@
 
     "userData": {
       "id": "NlwLU8",
-      "avatar": "https://img.buzzfeed.com/buzzfeed-static/static/2022-05/11/14/asset/82ea240a9e12/sub-buzz-2936-1652280422-21.jpg?downsize=900:*&output-format=auto&output-quality=auto",
-      "name": "Jessica"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQS-BVcBNRxsh3Ivm_Ad5cpZsim-BNmf_OcA&usqp=CAU",
+      "name": "Пан Заглушка 1"
     },
 
     "isUnread": false,
     "isSelected": false,
 
-    "dialog": [
-      {
+    "messages": [
+      { 
+        "id": "1",
         "isAuthor": false,
         "text": "It is like nobody knows it even exist...",
-        "date": "4/22/17 4:00 AM"
-      },
+        "date": "4/22/17 4:00 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "2",
         "isAuthor": true,
-        "text": "Do you mean right Ctrl?)",
-        "date": "4/22/17 4:05 AM"
-      },
+        "text": "Do you mean right Ctrl?",
+        "date": "4/22/17 4:05 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "3",
         "isAuthor": false,
-        "text": "Ahah, poor thing xD",
-        "date": "4/22/17 4:10 AM"
+        "text": "Yeah, exactly)",
+        "date": "4/22/17 4:10 AM",
+        "isUnread": false
+
       }
     ]
   },
@@ -35,28 +44,37 @@
 
     "userData": {
       "id": "EKzZuR",
-      "avatar": "https://play-lh.googleusercontent.com/-u-oG-Ni_pco9h7zc3CQl-lFkKJjztO3RGZMjnbaDiznnbXoMQZYUjITHN0BVxYHBg=w240-h480-rw",
-      "name": "Jane"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQS-BVcBNRxsh3Ivm_Ad5cpZsim-BNmf_OcA&usqp=CAU",
+      "name": "Пан Заглушка 2"
     },
 
     "isUnread": false,
     "isSelected": false,
 
-    "dialog": [
+    "messages": [
       {
+        "id": "1",
         "isAuthor": true,
-        "text": "It is seems I'm getting old",
-        "date": "4/22/17 4:00 AM"
-      },
+        "text": "It seems I'm getting old",
+        "date": "4/22/17 5:00 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "2",
         "isAuthor": false,
         "text": "Relax, age is just a number",
-        "date": "4/22/17 4:05 AM"
-      },
+        "date": "4/22/17 5:05 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "3",
         "isAuthor": true,
         "text": "Actually, it is a string",
-        "date": "4/22/17 4:05 AM"
+        "date": "4/22/17 5:10 AM",
+        "isUnread": false
+
       }
     ]
   },
@@ -66,23 +84,29 @@
 
     "userData": {
       "id": "gStI4Y",
-      "avatar": "https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
-      "name": "Juno"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQS-BVcBNRxsh3Ivm_Ad5cpZsim-BNmf_OcA&usqp=CAU",
+      "name": "Пан Заглушка 3"
     },
 
     "isUnread": false,
     "isSelected": false,
 
-    "dialog": [
+    "messages": [
       {
+        "id": "1",
         "isAuthor": false,
-        "text": "Батько наш Бандера...",
-        "date": "4/22/17 4:00 AM"
-      },
+        "text": "Long lorem to test scroll and message preview",
+        "date": "4/22/17 6:00 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "2",
         "isAuthor": true,
-        "text": "Україна мати, ми за Україну підем воювати!",
-        "date": "4/22/17 4:05 AM"
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "date": "4/22/17 6:05 AM",
+        "isUnread": false
+
       }
     ]
   },
@@ -93,27 +117,36 @@
     "userData": {
       "id": "btrdyZ",
       "avatar": "https://images.unian.net/photos/2022_08/thumb_files/1200_0_1660141146-4485.jpg",
-      "name": "Жіночка"
+      "name": "Жіночка з Криму"
     },
 
     "isUnread": false,
     "isSelected": false,
 
-    "dialog": [
+    "messages": [
       {
+        "id": "1",
         "isAuthor": true,
-        "text": "Шо там, як в Криму справи?)",
-        "date": "4/22/17 4:00 AM"
-      },
+        "text": "Шо там, як в Криму справи?",
+        "date": "4/22/17 7:00 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "2",
         "isAuthor": false,
         "text": "Вообще не хочу уезжать из Крыма, из Алушты! Как здесь классно! Вообще… Я привыкла здесь, как в своем доме жили. Настолько все душевно! По-домашнему",
-        "date": "4/22/17 4:05 AM"
-      },
+        "date": "4/22/17 7:05 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "3",
         "isAuthor": true,
         "text": "Це ще Притула супутника не запустив)",
-        "date": "4/22/17 4:05 AM"
+        "date": "4/22/17 7:10 AM",
+        "isUnread": false
+
       }
     ]
   },
@@ -123,28 +156,37 @@
 
     "userData": {
       "id": "EtABzK",
-      "avatar": "https://i1.sndcdn.com/artworks-Im4SB1sZq15yr4Uo-DFb75A-t500x500.jpg",
-      "name": "Батько наш"
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQS-BVcBNRxsh3Ivm_Ad5cpZsim-BNmf_OcA&usqp=CAU",
+      "name": "Пан Заглушка 4"
     },
 
     "isUnread": false,
     "isSelected": false,
 
-    "dialog": [
+    "messages": [
       {
+        "id": "1",
         "isAuthor": true,
-        "text": "Ви знали що 'боєголовка' це скорочення від 'бойова головка'?))",
-        "date": "4/22/17 4:00 AM"
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "date": "4/22/17 8:00 AM",
+        "isUnread": false
+
       },
       {
+        "id": "2",
         "isAuthor": false,
-        "text": "Пхахахахаха, щоб русні по лобі настукати xD",
-        "date": "4/22/17 4:05 AM"
-      },
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "date": "4/22/17 8:05 AM",
+        "isUnread": false
+      }
+      ,
       {
+        "id": "3",
         "isAuthor": true,
-        "text": "xD",
-        "date": "4/22/17 4:05 AM"
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "date": "4/22/17 8:10 AM",
+        "isUnread": false
+
       }
     ]
   }

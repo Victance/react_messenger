@@ -1,40 +1,46 @@
-import { IChat } from '../../types/IChat';
+import classNames from 'classnames';
+import { IMessage } from '../../types/IMessage';
+import { IUser } from '../../types/IUser';
 import './ChatMessages.scss';
 
 type Props = {
-  selectedChat: IChat | null;
+  message: IMessage;
+  userData: IUser;
+  fieldRef: React.RefObject<HTMLDivElement>;
 };
 
-export const ChatMessages: React.FC<Props> = ({ selectedChat }) => {
+export const ChatMessages: React.FC<Props> = ({ message, userData, fieldRef }) => {
   return (
     <>
-      <div className="ChatMessages">
-      
-        <div className="ChatMessages__container">
-          <div className="photo" />
-          
-          <div className="ChatMessages__text">
-            Hello! How are you?
+      <div className="ChatMessages">    
+        <div className={classNames("ChatMessages__container", {
+            "ChatMessages__container--author" : message.isAuthor
+          })}>
+        
+          {!message.isAuthor && (
+            <div className="photo">
+              <img
+                className='photo__img'
+                alt={userData.name}
+                src={userData.avatar} 
+              />
+            </div>
+          )}
+         
+          <div className={classNames("ChatMessages__text", {
+            "ChatMessages__text--author" : message.isAuthor
+          })}>
+            {message.text}
 
-
-            <div className="ChatMessages__date">
-              4/22/17 4:00 AM
+            <div className={classNames("ChatMessages__date", {
+            "ChatMessages__date--author" : message.isAuthor
+          })}>
+              {message.date}
             </div>
           </div>
-        </div>
-
-        <div className="ChatMessages__container">
-          <div className="photo" />
-          
-          <div className="ChatMessages__text">
-            Hello! How are you?
-
-
-            <div className="ChatMessages__date">
-              4/22/17 4:00 AM
-            </div>
-          </div>
-        </div>
+        </div> 
+   
+        <div ref={fieldRef}></div>  
       </div>
     </>
   );

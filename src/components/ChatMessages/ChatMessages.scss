@@ -1,10 +1,11 @@
 .ChatMessages {
-  flex-grow: 1;
-  padding: 10px;
-  
   &__container {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+
+    &--author {
+      justify-content: flex-end;
+    }
   }
 
   &__text {
@@ -13,39 +14,31 @@
     align-items: center;
     margin-left: 15px;
     padding: 10px 20px;
-    max-width: 60%;
+    min-width: 150px;
+    max-width: 400px;
     min-height: 70px;
     height: max-content;
+    white-space: pre-wrap;
     border-radius: 35px;
     background-color: #3d4051;
     color: #fff;
+
+    &--author {
+      background-color: #e0e0e0;
+      color: #000;
+    }
   }
 
   &__date {
+    font-size: 14px;
     position: absolute;
     bottom: -25px;
 
     color: grey;
+
+    &--author {
+      right: 25px;
+    }
   }
 }
 
-// display: flex;
-//   justify-content: flex-end;
-//   margin-bottom: 60px;
-
-//   &__text {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     margin-left: 15px;
-//     padding: 10px 20px;
-//     min-width: 150px;
-//     max-width: 60%;
-//     min-height: 70px;
-//     height: max-content;
-
-//     white-space: pre-line;
-//     border-radius: 35px;
-//     background-color: #e0e0e0;
-//     color: 000;
-//   }

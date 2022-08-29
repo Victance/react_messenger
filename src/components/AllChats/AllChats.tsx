@@ -4,11 +4,10 @@ import './AllChats.scss';
 
 type Props = {
   chats: IChat[];
-  setSelectedChat: (value: IChat) => void;
-  selectedChat: IChat | null;
+  queryLower: string;
 }
 
-export const AllChats: React.FC<Props> = ({ chats, setSelectedChat, selectedChat}) => {
+export const AllChats: React.FC<Props> = ({ chats, queryLower }) => {
   return (
     <div className="AllChats">
       <div className="AllChats__title">Chats</div>
@@ -17,8 +16,7 @@ export const AllChats: React.FC<Props> = ({ chats, setSelectedChat, selectedChat
         <SpecificChat 
           key={chat.id}
           chat={chat}
-          setSelectedChat={setSelectedChat}
-          selectedChat={selectedChat}
+          queryLower={queryLower}
         />
       ))}
     </div>

@@ -1,5 +1,64 @@
+@import "../../styles/utils/mixins";
+
 .Chat {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  height: 100vh;
+
+  &__button-up {
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background-color: inherit;
+    background-image: url(../../img/icon-up.svg);
+    background-position: center;
+    background-size: contain;
+
+    transition: background-image 0.3s;
+
+    &:hover {
+      background-image: url(../../img/icon-up-hover.svg);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d1cccc;;
+  
+    &-icon-back {
+      background-image: url(../../img/back.png);
+      margin-right: 25px;
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+    
+    &-photo {
+      margin-right: 25px;
+    }
+
+    &-name {
+      font-size: 30px;
+    }
+  }
+}
+
+.ChatMessagesContainer {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 10px 50px 10px 10px;
 }
