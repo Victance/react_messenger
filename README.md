@@ -1,4 +1,4 @@
-(Preview)[https://victance.github.io/react_messenger/#/]
+[Preview](https://victance.github.io/react_messenger/#/)
 
 Technologies:
 * HTML
